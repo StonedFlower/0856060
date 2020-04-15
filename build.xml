@@ -9,6 +9,7 @@
 
   <path id="classpath.test">
     <pathelement location="lib/junit-4.12.jar" />
+    <pathelement location="lib/junit-jupiter-api-5.3.2.jar" />
     <pathelement location="${main.build.dir}"/>
     <path refid="classpath.base" />
   </path>
