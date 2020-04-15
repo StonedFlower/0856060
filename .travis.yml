@@ -12,4 +12,3 @@ script:
   - make clean
   - make compileTest
   - make runCov
-  - make calCov
