@@ -7,7 +7,6 @@ addons:
   apt:
     packages:
     - junit4
-    - junit5
     - libmockito-java
 script:
   - make clean
