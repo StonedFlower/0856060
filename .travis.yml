@@ -1,1 +1,8 @@
 language: java
+jdk:
+  - oraclejdk9
+addons:
+  apt:
+    packages:
+    - junit4
+    - libmockito-java
