@@ -11,4 +11,4 @@ addons:
 script:
   - make clean
   - make compileTest
-  - make runCov
+  - make run
