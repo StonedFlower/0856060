@@ -1,8 +1,15 @@
 language: java
+
+dist: trusty
 jdk:
   - oraclejdk9
-#addons:
-#  apt:
-#    packages:
-#    - junit4
-#    - libmockito-java
+addons:
+  apt:
+    packages:
+    - junit4
+    - libmockito-java
+script:
+  - make clean
+  - make compileTest
+  - make runCov
+  - make calCov
