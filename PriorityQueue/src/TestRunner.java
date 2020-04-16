@@ -7,7 +7,7 @@ public class TestRunner {
         Result result = JUnitCore.runClasses(PriorityQueueTest.class);
         for (Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
-            throw failure;
+            throw Exception();
         }
         System.out.println(result.wasSuccessful());
             
