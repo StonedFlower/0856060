@@ -46,7 +46,7 @@ public class PriorityQueueTest {
 
     @Test(expected = java.lang.IllegalArgumentException.class)
     public void Init_pq_with_zero_capacity() {
-        pq = new PriorityQueue(1);
+        pq = new PriorityQueue(0);
     }
     @Test(expected = java.lang.ClassCastException.class)
     public void More_than_one_datatype_in_pq() {
