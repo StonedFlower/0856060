@@ -7,8 +7,12 @@ addons:
   apt:
     packages:
     - junit4
-    - libmockito-java
 script:
   - make -C PriorityQueue clean
   - make -C PriorityQueue compileTest
   - make -C PriorityQueue run
+branches:
+  only:
+    - master
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
