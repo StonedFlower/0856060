@@ -10,7 +10,11 @@ public class PriorityQueueTest {
 
     private PriorityQueue pq;
     private int ans[];
-
+    
+    public static void main(String args[])
+    {
+    }
+    
     public PriorityQueueTest(int input[], int output[]){
         //Print(input);
         //System.out.print(input.length);
