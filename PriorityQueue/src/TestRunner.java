@@ -7,8 +7,7 @@ public class TestRunner {
         Result result = JUnitCore.runClasses(PriorityQueueTest.class);
         for (Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
-            IllegalArgumentException ia;
-            throw ia;
+            throw new IllegalArgumentException(failure.toString());;
         }
         System.out.println(result.wasSuccessful());
             
