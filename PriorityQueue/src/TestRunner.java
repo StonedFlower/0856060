@@ -11,5 +11,7 @@ public class TestRunner {
         System.out.println(result.wasSuccessful());
         if(!result.wasSuccessful())
             return 1;
+        else
+            return 0;
     }
 }
