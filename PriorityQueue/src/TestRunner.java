@@ -9,5 +9,7 @@ public class TestRunner {
             System.out.println(failure.toString());
         }
         System.out.println(result.wasSuccessful());
+        if(!result.wasSuccessful())
+            return 1;
     }
 }
